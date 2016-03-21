@@ -163,7 +163,7 @@
 
 - (void)selectDefalutIndexPath
 {
-    [self selectIndexPath:[DOPIndexPath indexPathWithCol:0 row:0]];
+    [self selectIndexPath:[DOPIndexPath indexPathWithCol:0 row:1]];
 }
 
 - (void)selectIndexPath:(DOPIndexPath *)indexPath triggerDelegate:(BOOL)trigger {
