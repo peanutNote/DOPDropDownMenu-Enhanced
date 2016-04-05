@@ -617,8 +617,7 @@
     //NSAssert(_dataSource != nil, @"menu's dataSource shouldn't be nil");
     if (_leftTableView == tableView) {
         if (_dataSourceFlags.numberOfRowsInColumn) {
-            return [_dataSource menu:self
-                numberOfRowsInColumn:_currentSelectedMenudIndex];
+            return [_dataSource menu:self numberOfRowsInColumn:_currentSelectedMenudIndex] - (_currentSelectedMenudIndex == 0 ? 1 : 0);
         } else {
             //NSAssert(0 == 1, @"required method of dataSource protocol should be implemented");
             return 0;
