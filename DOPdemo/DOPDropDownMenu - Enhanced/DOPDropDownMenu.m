@@ -495,10 +495,10 @@
     
     if (forward) {
         // 展开
-        indicator.fillColor = _textSelectedColor.CGColor;
+        indicator.fillColor = _indicatorColor.CGColor;
     } else {
         // 收缩
-        indicator.fillColor = _textColor.CGColor;
+        indicator.fillColor = _indicatorColor.CGColor;
     }
     
     complete();
